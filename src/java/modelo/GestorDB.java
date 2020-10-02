@@ -20,9 +20,9 @@ import java.util.ArrayList;
 public class GestorDB {
 
 	private Connection con;
-	private final String CON_STR = "";
-	private final String USER = "";
-	private final String PASS = "";
+	private final String CON_STR = "jdbc:sqlserver://LAPTOP-0CRE86U4\\SQLEXPRESS:1433;databaseName=Gestoria";
+	private final String USER = "sa";
+	private final String PASS = "123456";
 
 	private void abrirConexion() {
 		try {
@@ -49,7 +49,7 @@ public class GestorDB {
 		ArrayList<Servicio> lista = new ArrayList<Servicio>();
 		try {
 			abrirConexion();
-			String sql = "select * from productos";
+			String sql = "select * from Servicios";
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(sql);
 			while (rs.next()) {
@@ -72,7 +72,7 @@ public class GestorDB {
 		boolean inserto = false;
 		try {
 			abrirConexion();
-			String sql = "INSERT INTO Ventas (tipo, descripcion, costo) VALUES (?,?,?)";
+			String sql = "INSERT INTO Servicios (tipo, descripcion, costo) VALUES (?,?,?)";
 			PreparedStatement st = con.prepareStatement(sql);
 			st.setString(1, servicio.getTipo());
 			st.setString(2, servicio.getDescripcion());
