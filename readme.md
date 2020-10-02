@@ -27,9 +27,10 @@ reportes.jsp: muestra la siguiente información:
 * Total en concepto de importe por cada servicio.
 El proyecto web, en la carpeta Source Package, debe respetar la siguiente estructura:
 
-* Paquete Base de Datos- AccesoBaseDatos.java: contiene la lógica para poder acceder a la BD Gestoría y los métodos necesarios para la registración y procesamiento de los servicios registrados.
-* Paquete Modelo- Servicio.java: contiene los siguientes atributos: número (int), tipo (), descripción (String)y costo (double).
-* Paquete Servlets- ServicioServlet.java: contiene la lógica necesaria que permite identificar de que página se originó la petición y permite su procesamiento.
+Paquete Base de Datos- AccesoBaseDatos.java: contiene la lógica para poder acceder a la BD Gestoría y los métodos necesarios para la registración y procesamiento de los servicios registrados.
+
+Paquete Modelo- Servicio.java: contiene los siguientes atributos: número (int), tipo (), descripción (String)y costo (double).
+Paquete Servlets- ServicioServlet.java: contiene la lógica necesaria que permite identificar de que página se originó la petición y permite su procesamiento.
 
 La Base de Datos que se usará para realizar la práctica se llama: Gestoria
 
