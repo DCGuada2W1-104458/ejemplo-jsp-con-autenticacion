@@ -34,7 +34,11 @@ El proyecto web, en la carpeta Source Package, debe respetar la siguiente estruc
 La Base de Datos que se usará para realizar la práctica se llama: Gestoria
 
 SERVICIOS
+
 id int (PK) IDENTITY
+
 tipo varchar(50)
+
 descripcion varchar(50)
+
 costo real
